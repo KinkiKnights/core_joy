@@ -229,7 +229,7 @@
             getGamepadData();
             /* 非常停止、マウスクリック */
             let epb_click = 0;
-            if (last_safety) epb_click += 1;
+            if (!last_safety) epb_click += 1;
             if (leftMouseDown) epb_click += 2;
             if (rightMouseDown) epb_click += 4;
             let data = `${epb_click},${lastMouseX},${last_pad.join(",")},${key_bin}`;
