@@ -8,7 +8,7 @@ import threading
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import urllib
 
-DEBUG_MODE = True
+DEBUG_MODE = False
 frames = [0,127,127,127,127,127,0]
 """
 =============================
